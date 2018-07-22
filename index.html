@@ -32,7 +32,7 @@
                             <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="#trade">Trade</a>
+                            <a href="#trade">Car Trade</a>
                         </li>
                         <li>
                             <a href="#rental">Rental</a>
@@ -100,21 +100,21 @@
         <div class="container">
             <div class="row">
                 <div class="col s12 m4">
-                    <div class="card-panel">
-                        <i class="material-icons large teal-text">build</i>
+                    <div class="card-panel z-depth-2">
+                        <i class="material-icons large teal-text ">build</i>
                         <h4>Car Servicing</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, voluptas.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
-                    <div class="card-panel">
+                    <div class="card-panel z-depth-2">
                         <i class="material-icons large teal-text">battery_charging_full</i>
                         <h4>Change Battery</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, voluptas.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
-                    <div class="card-panel">
+                    <div class="card-panel z-depth-2">
                         <i class="material-icons large teal-text">report</i>
                         <h4>Accident Claims</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, voluptas.</p>
@@ -124,7 +124,74 @@
         </div>
     </section>
 
-    <!-- Section: Trade -->
+    <!-- Section: Trade Cars -->
+    <section id="trade-cars" class="section section-trade-cars scrollspy">
+        <div class="container">
+            <div class="row">
+                <h4 class="center">
+                    Trade Your Cars</h4>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/car-1.jpg" alt="">
+                            <span class="card-title">Mercedes-Benz</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nobis?
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/car-1.jpg" alt="">
+                            <span class="card-title">Mercedes-Benz</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nobis?
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/car-3.jpg" alt="">
+                            <span class="card-title">Mercedes-Benz</span>
+                        </div>
+                        <div class="card-content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, nobis?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Car Rental-->
+    <section class="section section-services grey lighten-4 center">
+        <div class="container">
+            <div class="row">
+                <h4 class="center">Find Your Ideal Car</h4>
+                <div class="col s12 m4">
+                    <p class="left-align">
+                        <i class="material-icons left-align small">event</i> Pick Up Date</p>
+                    <input type="text" class="datepicker">
+                </div>
+                <div class="col s12 m4">
+                    <p class="left-align">
+                        <i class="material-icons left-align small">event</i> Drop Off Date</p>
+                    <input type="text" class="datepicker">
+                </div>
+                <div class="col s12 m4">
+                    <p class="left-align">
+                        <i class="material-icons left-align small">access_time</i> Pick Up Time</p>
+                    <input type="text" class="timepicker">
+                </div>
+            </div>
+            <a class="waves-effect waves-light btn-small">Hire Car</a>
+        </div>
+    </section>
 
 
 
@@ -144,6 +211,19 @@
             transition: 500,
             interval: 6000
         })
+
+        // Datepicker
+        const datepicker = document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.datepicker');
+            var instances = M.Datepicker.init(elems, {});
+        });
+
+        // Timepicker
+        const timepicker = document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.timepicker');
+            var instances = M.Timepicker.init(elems, {});
+        });
+
 
     </script>
 
